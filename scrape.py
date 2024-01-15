@@ -1,9 +1,3 @@
-__author__ = "Martin Bustos <fronkongames@gmail.com>"
-__copyright__ = "Copyright 2022, Martin Bustos"
-__license__ = "MIT"
-__version__ = "1.1.0"
-__email__ = "fronkongames@gmail.com"
-
 import sys
 import os
 import re
@@ -399,7 +393,6 @@ def Scraper(dataset, notreleased, discarted, args):
     sys.exit()
 
 if __name__ == "__main__":
-  print(f'Steam Games Scraper {__version__} by {__author__}.')
   parser = argparse.ArgumentParser(description='Steam games scraper.')
   parser.add_argument('-o', '--outfile',     type=str,   default=DEFAULT_OUTFILE,  help='Output file name')
   parser.add_argument('-s', '--sleep',       type=float, default=DEFAULT_SLEEP,    help='Waiting time between requests')
